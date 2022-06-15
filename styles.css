@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import './navbar.css';
+* {
+    font-family: Lato,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-do: gold;
+}
+
+.doco {
+    color: var(--color-do);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 750px;
+    width: 100%;
+}
+
+.jumbotronn {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    color: var(--color-do);
+}
+
+.aaa {
+    width: 75%;
+}
+
+.color {
+    background-color: rgb(5, 5, 5);
+}
+
+.txt {
+    font-size: 100px;
+}
+
+.txt2 {
+    font-size: 50px;
+}
+.txt3 {
+    font-size: 20px;
+
+}
+
+.buttoni {
+    width: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    color: var(--color-do);
+    background-color: rgb(5, 5, 5);
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    transform: scale(1);
+    transition: 500ms ease-in-out all;
+}
+
+.buttoni :hover {
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255, 217, 0, 0.37);
+    background: none;
+    transform: scale(1.05);
+}
+
+section:not(#jumbotron) {
+    padding: 3rem;
+}
+
+.title-section {
+    font-size: 3rem;
+    font-weight: bold;
+    width: fit-content;
+    color: black;
+    background-color: var(--color-do);
+    padding: 2rem 2.5rem 2rem 0;
+    position: relative;
+}
+
+.title-section::before {
+    content: "";
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    border-radius: 100% 0% 0% 100% / 51% 56% 44% 49%;    ;
+    background-color: var(--color-do);
+}
+
+.sobremi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.txt-body-lg-1 {
+    padding: 5px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-do);
+}
+
+.sm-i-g {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2.5rem;
+}
+
+.sm-i-g .item {
+    width: 80px;
+    height: 80px;
+}
+
+.sm-i-g .item  img{
+    width: 100%;
+}
+
+.proyectos-grid {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2.5rem;
+}
+
+.card .card-picture img {
+    width: 100%;
+}
+
+.card {
+    background-color: var(--color-do);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    transform: scale(1);
+    transition: 400ms ease-in-out all;
+}
+
+.card:hover {
+    box-shadow: rgba(255, 217, 0, 0.37);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-form {
+    margin: 1rem;
+    background-color: var(--color-do);
+    border-radius: 0.25rem;
+    padding: 1.5px;
+}
+
+.contacto-g {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2.5rem;
+}
+
+
+
+.btn {
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: gold;
+    margin-top: 5px;
+    transform: scale(1);
+    transition: 400ms ease-in-out all;
+}
+
+.btn.block {
+    width: 100%;
+}  
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 8px 4px  rgba(255, 217, 0, 0.37);
+    transform: scale(1.028);
+}
+
+.contacto-g  > div:nth-child(2) {
+    width: fit-content;
+    height: fit-content;
+    place-self: center;
+}
+
+.txt-c {
+    color: gold;
+}
+
+
+
+ul {
+    list-style: none;
+    
+}
+
+.btnd {
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    background-color: var(--color-do);
+    color: black;
+    margin-top: 5px;
+    transform: scale(1);
+    transition: 300ms ease-in-out all;
+}
+
+
+.btnd:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 8px 4px  rgba(255, 217, 0, 0.37);
+    transform: scale(1.05);
+}
+
+.form-box label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    padding: 1rem;
+}
+
+.form-box input {
+    width: 100%;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: gold;
+}
+
+.ee {
+    color: black;
+}
+
+@media (max-width: 476px) {
+    .contacto-g {
+        grid-template-columns: 1fr;
+    }
+    .ee {
+        color: goldenrod;
+    }
+}
+
+
